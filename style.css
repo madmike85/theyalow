@@ -13,13 +13,13 @@ body {
 .logo {
   float: left;
   position: relative;
-  margin-top: 28px;
-  margin-left: 140px;
+  margin-top: 21px;
+  margin-left: 134px;
 }
 
 .logo-img {
-  height: 79px;
-  width: 79px;
+  height: 95px;
+  width: 95px;
 }
 
 .logo-title {
@@ -28,8 +28,14 @@ body {
   font-size: 41px;
   text-align: center;
   position: absolute;
-  top: 22px;
+  top: 29px;
+  color: #fff;
+  letter-spacing: 0px;
+  font-family: 'Lucida Sans';
+  font-style: italic;
 }
+
+/* MENU */
 
 .menu {
   float: right;
@@ -39,27 +45,7 @@ body {
   position: relative;
   margin-top: 71px;
   margin-right: 140px;
-}
-
-.box1,
-.box2 {
-  position: absolute;
-  width: 453px;
-  height: 41px;
-  background: #f5c506;
-}
-
-.box1 {
-  top: -3px;
-  left: -4px;
-  z-index: 2;
-  opacity: 0.27;
-}
-
-.box2 {
-  top: -6px;
-  left: -8px;
-  opacity: 0.27;
+  box-shadow: -4px -5px rgba(245, 197, 6, 0.27), -8px -8px rgba(245, 197, 6, 0.27);
 }
 
 .menu ul {
@@ -77,9 +63,10 @@ body {
   display: inline-block;
   height: 14px;
   width: 127px;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 13px;
   font-size: 17px;
+  font-family: 'Segoe WP';
   text-transform: uppercase;
   text-decoration: none;
   color: #b99403;
@@ -113,9 +100,354 @@ ul li:nth-child(2) .menu-item {
 }
 
 ul li:nth-child(1) .menu-item img {
-  left: 39px;
+  left: 37px;
+  top: 9px;
+}
+
+ul li:nth-child(2) .menu-item img {
+  left: 12px;
+  top: 9px;
+  color: black;
+}
+
+ul li:nth-child(3) .menu-item img {
+  left: 15px;
+  top: 9px;
 }
 
 .menu-item:hover {
   color: black;
+}
+
+/* FIRST SLIDER */
+
+.slider-container-one {
+  background-image: url(assets/images/Bg-1.jpg);
+  height: 398px;
+  padding-top: 168px;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.video-wrapper {
+  width: 549px;
+  height: 327px;
+  position: relative;
+  margin-left: 150px;
+  background-image: url(assets/Layer17@1X.png);
+  float: left;
+}
+
+.video-container {
+  background-color: rgba(245, 197, 6, 0.11);
+}
+
+.video-wrapper .play-btn-circle {
+  position: absolute;
+  width: 65.5px;
+  height: 65.5px;
+  border-radius: 30px;
+  background-color: #f5c506;
+  top: 131px;
+  left: 242px;
+  opacity: 0.72;
+}
+
+.video-wrapper .play-icon {
+  position: absolute;
+  width: 22px;
+  height: 36px;
+  left: 266px;
+  top: 146px;
+}
+
+.video-wrapper .play-btn {
+  position: absolute;
+  left: 29px;
+  bottom: 22px;
+  opacity: 0.6;
+}
+
+.video-wrapper .vol-btn {
+  position: absolute;
+  right: 18px;
+  bottom: 26px;
+}
+
+.len-bar {
+  display: flex;
+  position: absolute;
+  left: 80px;
+  bottom: 29px;
+}
+
+.len-bar img:last-child {
+  opacity: 0.28;
+}
+
+.banner-container {
+  float: left;
+  text-transform: uppercase;
+  font-size: 41px;
+  letter-spacing: 1px;
+  font-family: 'Asap';
+  font-weight: 400;
+  text-align: center;
+  padding-top: 70px;
+  padding-left: 43px;
+}
+
+.banner-container h2:first-child {
+  color: #f5c506;
+}
+
+.banner-container h2:last-child {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.nav-left,
+.nav-right {
+  width: 32px;
+  height: 57px;
+  background-color: #f5c506;
+  position: absolute;
+  top: 132px;
+}
+
+.nav-left {
+  left: 0;
+}
+
+.nav-right {
+  right: 0;
+}
+
+.nav-left img {
+  margin-top: 17px;
+  margin-left: 7px;
+}
+
+.nav-right img {
+  margin-top: 16px;
+  margin-left: 9px;
+}
+
+/* ICONS ROW */
+
+.icons-container {
+  height: 212px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 -2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icons-container::after {
+  content: '';
+  background: url(assets/images/Layer7@1X.png);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.icon-item {
+  width: 340px;
+  height: 100%;
+}
+
+.icons-container .icon-item:nth-child(1) {
+  border-left: 1px solid #d4d4d4;
+}
+
+.icons-container .icon-item:nth-child(2) {
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+}
+
+.icons-container .icon-item:nth-child(3) {
+  border-right: 1px solid #d4d4d4;
+}
+
+.icon-item:nth-child(1) .icon-img {
+  margin-left: 112px;
+  margin-top: 59px;
+}
+
+.icon-item:nth-child(2) .icon-img {
+  margin-left: 128px;
+  margin-top: 35px;
+}
+
+.icon-item:nth-child(3) .icon-img {
+  margin-left: 116px;
+  margin-top: 52px;
+}
+
+.icon-item:nth-child(1) .icon-title {
+  margin-left: 19px;
+  margin-top: 4px;
+}
+
+.icon-item:nth-child(2) .icon-title {
+  margin-left: 19px;
+  margin-top: 8px;
+}
+
+.icon-item:nth-child(3) .icon-title {
+  margin-left: -18px;
+  margin-top: 3px;
+}
+
+.icon-title {
+  font-size: 27px;
+  letter-spacing: 0px;
+  color: #000000;
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* SECOND SLIDER */
+
+.slider-container-two {
+  background-image: url(assets/images/Layer10copy3@1X.png);
+  height: 509px;
+  padding: 31px 142px 0 139px;
+}
+
+.slider-item-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-item-title {
+  height: 79px;
+  font-size: 37px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.video-part-container {
+  display: flex;
+}
+
+.text-content {
+  position: relative;
+  width: 272px;
+  height: 183px;
+  background-color: #ec9e03;
+  padding: 16px 38px 34px 31px;
+}
+
+.text-content p {
+  width: 279px;
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: 'Segoe WP';
+  font-weight: 300;
+  margin: 0;
+}
+
+.plus-sign {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+  right: 13px;
+  bottom: 12px;
+}
+
+.video-content {
+  width: 315px;
+  height: 233px;
+  position: relative;
+}
+
+.video-content .play-btn-circle {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  border-radius: 30px;
+  background-color: #f5c506;
+  top: 93px;
+  left: 130px;
+  opacity: 0.72;
+}
+
+.video-content .play-icon {
+  position: absolute;
+  width: 19px;
+  height: 33px;
+  top: 107px;
+  left: 154px;
+}
+
+.twitter-container {
+  position: relative;
+  width: 329px;
+  height: 233px;
+  background-color: #ec9e03;
+}
+
+.twitter-img {
+  position: absolute;
+  bottom: 17px;
+  left: 76px;
+}
+
+.twitter-container .plus-sign {
+  right: 8px;
+}
+
+.twitter-container p {
+  position: absolute;
+  font-size: 25px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: 'Segoe WP';
+  font-weight: 300;
+  top: 9px;
+  right: 17px;
+}
+
+.slider-item-date {
+  width: 111px;
+  height: 75px;
+  padding-top: 11px;
+  padding-left: 2px;
+  background-color: #ddb101;
+}
+
+.date-day {
+  font-size: 51px;
+  letter-spacing: 1px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  text-align: center;
+}
+
+.date-month {
+  font-size: 21px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #b26529;
+  font-family: 'Segoe UI';
+  text-transform: uppercase;
+  text-align: center;
 }
