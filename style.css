@@ -160,7 +160,7 @@ ul li:nth-child(3) .menu-item img {
     margin: 0;
     box-shadow: none;
     width: 454px;
-    height: 62px;
+    height: 61px;
   }
 
   .menu-item {
@@ -241,11 +241,10 @@ ul li:nth-child(3) .menu-item img {
   position: absolute;
   width: 65.5px;
   height: 65.5px;
-  border-radius: 30px;
-  background-color: #f5c506;
+  border-radius: 50%;
+  background-color: rgba(245, 197, 6, 0.72);
   top: 131px;
   left: 242px;
-  opacity: 0.72;
   transition: all ease-out 0.09s;
   -webkit-transition: all ease-out 0.09s;
   -moz-transition: all ease-out 0.09s;
@@ -253,7 +252,7 @@ ul li:nth-child(3) .menu-item img {
 }
 
 .video-wrapper .play-btn-circle:hover {
-  opacity: 1;
+  background-color: rgba(245, 197, 6, 1);
   cursor: pointer;
 }
 
@@ -380,7 +379,7 @@ ul li:nth-child(3) .menu-item img {
   .slider-container-one {
     padding: 0;
     height: 389px;
-    width: 640px;
+    width: auto;
   }
 
   .video-wrapper {
@@ -411,6 +410,7 @@ ul li:nth-child(3) .menu-item img {
 
   .len-bar {
     left: 134px;
+    bottom: 30px;
   }
 
   .banner-container {
@@ -627,11 +627,15 @@ ul li:nth-child(3) .menu-item img {
   position: absolute;
   width: 61px;
   height: 61px;
-  border-radius: 30px;
-  background-color: #f5c506;
   top: 93px;
   left: 130px;
-  opacity: 0.72;
+  transition: all ease-out 0.09s;
+  -webkit-transition: all ease-out 0.09s;
+  -moz-transition: all ease-out 0.09s;
+  -o-transition: all ease-out 0.09s;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(245, 197, 6, 0.72);
   transition: all ease-out 0.09s;
   -webkit-transition: all ease-out 0.09s;
   -moz-transition: all ease-out 0.09s;
@@ -639,7 +643,7 @@ ul li:nth-child(3) .menu-item img {
 }
 
 .video-content .play-btn-circle:hover {
-  opacity: 1;
+  background-color: rgba(245, 197, 6, 1);
   cursor: pointer;
 }
 
@@ -647,8 +651,8 @@ ul li:nth-child(3) .menu-item img {
   position: absolute;
   width: 19px;
   height: 33px;
-  top: 107px;
-  left: 154px;
+  top: 14px;
+  left: 24px;
 }
 
 .twitter-container {
@@ -815,7 +819,7 @@ ul li:nth-child(3) .menu-item img {
 
 @media screen and (max-width: 640px) {
   .slider-container-two {
-    width: 640px;
+    width: auto;
     background-image: none;
     padding: 0;
   }
@@ -1043,4 +1047,31 @@ footer .logo-title {
     font-size: 17px;
     margin-top: 7px;
   }
+}
+
+.video-wrapper button {
+  width: 65.5px;
+  height: 65.5px;
+  border-radius: 50%;
+  background-color: rgba(245, 197, 6, 0.72);
+  top: -121px;
+  left: 242px;
+  transition: all ease-out 0.09s;
+  -webkit-transition: all ease-out 0.09s;
+  -moz-transition: all ease-out 0.09s;
+  -o-transition: all ease-out 0.09s;
+  border: none;
+  position: relative;
+}
+
+.video-wrapper button:hover {
+  background-color: rgba(245, 197, 6, 1);
+}
+
+.video-wrapper button .play-icon {
+  position: absolute;
+  width: 22px;
+  height: 36px;
+  left: 25px;
+  top: 15px;
 }
