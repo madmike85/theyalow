@@ -43,7 +43,7 @@ body {
   top: 27px;
   left: 92px;
   color: #fff;
-  letter-spacing: 0px;
+  letter-spacing: 0.2px;
   font-family: 'Lucida Sans';
   font-style: italic;
 }
@@ -98,12 +98,18 @@ ul li:nth-child(2) .menu-item {
   border-right: 1px solid #b99403;
 }
 
+ul li:nth-child(1) .menu-item,
+ul li:nth-child(3) .menu-item {
+  letter-spacing: 0.3px;
+}
+
 ul li:nth-child(1) .menu-item {
   width: 152px;
 }
 
 ul li:nth-child(2) .menu-item {
   width: 112px;
+  letter-spacing: 1.5px;
 }
 
 .menu-item img {
@@ -154,6 +160,7 @@ ul li:nth-child(3) .menu-item img {
     font-size: 19px;
     top: 13px;
     left: 47px;
+    letter-spacing: 0.5px;
   }
 
   .menu {
@@ -176,23 +183,26 @@ ul li:nth-child(3) .menu-item img {
   ul li:nth-child(1) .menu-item {
     padding-right: 24px;
     width: 147px;
+    letter-spacing: 0px;
   }
 
   ul li:nth-child(2) .menu-item {
-    padding-right: 25px;
-    width: 106px;
+    padding-right: 16px;
+    width: 115px;
+    letter-spacing: 1.6px;
   }
 
   ul li:nth-child(3) .menu-item {
     padding-right: 15px;
     width: 136px;
+    letter-spacing: 0px;
   }
 
   ul li:nth-child(1) .menu-item img {
     left: 21px;
-    top: 17px;
+    top: 16px;
     height: 27px;
-    width: 28px;
+    width: 27px;
   }
 
   ul li:nth-child(2) .menu-item img {
@@ -204,8 +214,8 @@ ul li:nth-child(3) .menu-item img {
 
   ul li:nth-child(3) .menu-item img {
     left: 11px;
-    top: 16px;
-    height: 26px;
+    top: 17px;
+    height: 25px;
     width: 31px;
   }
 }
@@ -307,7 +317,7 @@ ul li:nth-child(3) .menu-item img {
   float: left;
   text-transform: uppercase;
   font-size: 41px;
-  letter-spacing: 1px;
+  letter-spacing: 1.8px;
   font-family: 'Asap';
   font-weight: 400;
   text-align: center;
@@ -317,11 +327,13 @@ ul li:nth-child(3) .menu-item img {
 
 .banner-container h2:first-child {
   color: #f5c506;
+  padding-right: 9px;
+  padding-top: 1px;
 }
 
 .banner-container h2:last-child {
   color: #fff;
-  letter-spacing: 2px;
+  padding-left: 6px;
 }
 
 .nav-left,
@@ -402,15 +414,17 @@ ul li:nth-child(3) .menu-item img {
 
   .video-wrapper .play-btn {
     left: 83px;
+    bottom: 21px;
   }
 
   .video-wrapper .vol-btn {
     right: 55px;
+    bottom: 25px;
   }
 
   .len-bar {
     left: 134px;
-    bottom: 30px;
+    bottom: 28px;
   }
 
   .banner-container {
@@ -530,9 +544,9 @@ ul li:nth-child(3) .menu-item img {
   }
 
   .icon-item:nth-child(3) .icon-img {
-    margin-left: 66px;
-    margin-top: 26px;
-    width: 72px;
+    margin-left: 67px;
+    margin-top: 27px;
+    width: 71px;
   }
 
   .icon-title {
@@ -542,6 +556,7 @@ ul li:nth-child(3) .menu-item img {
   .icon-item:nth-child(1) .icon-title {
     margin-left: -28px;
     margin-top: 12px;
+    padding-left: 2px;
   }
 
   .icon-item:nth-child(3) .icon-title {
@@ -569,7 +584,7 @@ ul li:nth-child(3) .menu-item img {
 .slider-item-title {
   height: 79px;
   font-size: 37px;
-  letter-spacing: 0px;
+  letter-spacing: 0.5px;
   color: #ffffff;
   font-family: 'PT Sans';
   font-weight: 400;
@@ -591,12 +606,16 @@ ul li:nth-child(3) .menu-item img {
 .text-content p {
   width: 279px;
   font-size: 29px;
-  letter-spacing: 0px;
+  letter-spacing: 0.3px;
   line-height: 38px;
   color: #ffffff;
   font-family: 'Segoe WP';
   font-weight: 300;
   margin: 0;
+}
+
+.mobile-content {
+  display: none;
 }
 
 .plus-sign {
@@ -715,11 +734,11 @@ ul li:nth-child(3) .menu-item img {
 
 .twitter-column-item p {
   position: absolute;
-  top: 8px;
-  left: 33px;
+  top: 6px;
+  left: 34px;
   width: 217px;
   font-size: 13px;
-  letter-spacing: 0px;
+  letter-spacing: 0.1px;
   color: #8f8e8e;
   font-family: 'Arial';
 }
@@ -732,6 +751,7 @@ ul li:nth-child(3) .menu-item img {
 
 .twitter-column-item:nth-child(1) {
   opacity: 1;
+  margin-top: -1px;
 }
 
 .twitter-column-item:nth-child(2) {
@@ -775,22 +795,24 @@ ul li:nth-child(3) .menu-item img {
 
 .date-day {
   font-size: 51px;
-  letter-spacing: 1px;
   line-height: 38px;
   color: #ffffff;
   font-family: 'Segoe UI';
   font-weight: bold;
   text-align: center;
+  padding-left: 3px;
+  padding-top: 1px;
 }
 
 .date-month {
   font-size: 21px;
-  letter-spacing: 0px;
+  letter-spacing: 0.6px;
   line-height: 38px;
   color: #b26529;
   font-family: 'Segoe UI';
   text-transform: uppercase;
   text-align: center;
+  padding-left: 3.6px;
 }
 
 .slider {
@@ -849,9 +871,19 @@ ul li:nth-child(3) .menu-item img {
     justify-content: space-between;
   }
 
+  .desktop-content {
+    display: none;
+  }
+
+  p.mobile-content {
+    display: block;
+    width: 258px;
+  }
+
   .text-content {
-    width: 239px;
-    padding: 16px 38px 34px 23px;
+    width: 235px;
+    padding: 18px 38px 34px 26px;
+    height: 182px;
   }
 
   .text-content p {
@@ -860,7 +892,7 @@ ul li:nth-child(3) .menu-item img {
 
   .plus-sign {
     bottom: 17px;
-    right: 12px;
+    right: 11px;
   }
 
   .video-content {
@@ -894,6 +926,8 @@ ul li:nth-child(3) .menu-item img {
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
+  padding-left: 7px;
+  letter-spacing: 0.3px;
 }
 
 .info-content-container {
@@ -916,7 +950,7 @@ ul li:nth-child(3) .menu-item img {
 
 .medium-item-img,
 .small-item-img {
-  padding-bottom: 39px;
+  padding-bottom: 40px;
 }
 
 .mark-sign {
@@ -938,6 +972,8 @@ ul li:nth-child(3) .menu-item img {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  padding-left: 3px;
+  padding-top: 2px;
 }
 
 .content-text-container {
@@ -947,7 +983,7 @@ ul li:nth-child(3) .menu-item img {
 
 .content-text-container ul {
   list-style: none;
-  margin-left: 40px;
+  margin-left: 33px;
 }
 
 .content-text-container li {
@@ -969,8 +1005,29 @@ ul li:nth-child(3) .menu-item img {
   border-radius: 7px;
   background-color: #f5c506;
   display: inline-block;
-  margin-left: -31px;
+  margin-left: -33px;
   margin-right: 17px;
+}
+
+.content-text-container li:nth-child(1) {
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+
+.content-text-container li:nth-child(1)::before {
+  padding-bottom: 1px;
+}
+
+.content-text-container li:nth-child(2) {
+  line-height: 25px;
+  margin-bottom: 23px;
+}
+
+.content-text-container li:nth-child(3) {
+  margin-bottom: 9px;
+}
+
+.content-text-container li:nth-child(4) {
 }
 
 @media screen and (max-width: 640px) {
@@ -986,6 +1043,8 @@ ul li:nth-child(3) .menu-item img {
     text-align: left;
     margin-left: 18px;
     width: auto;
+    padding-bottom: 4px;
+    font-size: 40px;
   }
 
   .images-row {
@@ -1046,6 +1105,9 @@ footer .logo-title {
   footer .logo-title {
     font-size: 17px;
     margin-top: 7px;
+    font-size: 17px;
+    margin-top: 6px;
+    padding-left: 1px;
   }
 }
 
